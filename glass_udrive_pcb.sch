@@ -804,11 +804,11 @@ Pad diameter: 30 mil</description>
 </class>
 </classes>
 <parts>
-<part name="IC1" library="burr-brown" deviceset="OPA129" device="U"/>
+<part name="OPA129" library="burr-brown" deviceset="OPA129" device="U"/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="J1" library="GFL" deviceset="OMNETICS_A75243-001" device=""/>
-<part name="R13" library="GFL" deviceset="R" device="_0402" value="100MOhm"/>
-<part name="C20" library="GFL" deviceset="C" device="_0402" value="10pF"/>
+<part name="BRIDGE" library="GFL" deviceset="R" device="_0402" value="100MOhm"/>
+<part name="CAPCOM" library="GFL" deviceset="C" device="_0402" value="10pF"/>
 <part name="C1" library="GFL" deviceset="C" device="_0402" value=".01uF"/>
 <part name="C2" library="GFL" deviceset="C" device="_0402" value=".01uF"/>
 <part name="P-1" library="supply1" deviceset="-15V" device=""/>
@@ -819,11 +819,11 @@ Pad diameter: 30 mil</description>
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
 <part name="GLASS" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="STIM2_N" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
-<part name="I_X" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="IX" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="STIM1_N" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="STIM1_P" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="STIM2_P" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
-<part name="I_COM" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="ICOM" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="GND" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 </parts>
 <sheets>
@@ -831,12 +831,12 @@ Pad diameter: 30 mil</description>
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="149.86" y="91.44"/>
+<instance part="OPA129" gate="G$1" x="149.86" y="91.44"/>
 <instance part="FRAME1" gate="G$1" x="-25.4" y="-10.16"/>
 <instance part="FRAME1" gate="G$2" x="121.92" y="-10.16"/>
 <instance part="J1" gate="G$1" x="58.42" y="116.84"/>
-<instance part="R13" gate="R" x="132.08" y="106.68" rot="R90"/>
-<instance part="C20" gate="C" x="132.08" y="86.36"/>
+<instance part="BRIDGE" gate="R" x="132.08" y="106.68" rot="R90"/>
+<instance part="CAPCOM" gate="C" x="132.08" y="86.36"/>
 <instance part="C1" gate="C" x="160.02" y="73.66" rot="R270"/>
 <instance part="C2" gate="C" x="154.94" y="104.14" rot="R90"/>
 <instance part="P-1" gate="1" x="147.32" y="68.58"/>
@@ -847,11 +847,11 @@ Pad diameter: 30 mil</description>
 <instance part="P-2" gate="1" x="25.4" y="114.3" rot="R270"/>
 <instance part="GLASS" gate="P" x="17.78" y="86.36"/>
 <instance part="STIM2_N" gate="P" x="91.44" y="124.46" rot="R180"/>
-<instance part="I_X" gate="P" x="17.78" y="73.66"/>
+<instance part="IX" gate="P" x="17.78" y="73.66"/>
 <instance part="STIM1_N" gate="P" x="91.44" y="109.22" rot="R180"/>
 <instance part="STIM1_P" gate="P" x="20.32" y="109.22"/>
 <instance part="STIM2_P" gate="P" x="17.78" y="124.46"/>
-<instance part="I_COM" gate="P" x="17.78" y="78.74"/>
+<instance part="ICOM" gate="P" x="17.78" y="78.74"/>
 <instance part="GND" gate="P" x="17.78" y="68.58"/>
 </instances>
 <busses>
@@ -859,7 +859,7 @@ Pad diameter: 30 mil</description>
 <nets>
 <net name="+15V" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="V+"/>
+<pinref part="OPA129" gate="G$1" pin="V+"/>
 <pinref part="P+1" gate="1" pin="+15V"/>
 <wire x1="147.32" y1="106.68" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C2" gate="C" pin="1"/>
@@ -875,7 +875,7 @@ Pad diameter: 30 mil</description>
 </net>
 <net name="-15V" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="V-"/>
+<pinref part="OPA129" gate="G$1" pin="V-"/>
 <pinref part="P-1" gate="1" pin="-15V"/>
 <wire x1="147.32" y1="71.12" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C1" gate="C" pin="2"/>
@@ -891,12 +891,12 @@ Pad diameter: 30 mil</description>
 </net>
 <net name="ELECTRODE" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="+IN"/>
+<pinref part="OPA129" gate="G$1" pin="+IN"/>
 <wire x1="142.24" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C20" gate="C" pin="1"/>
+<pinref part="CAPCOM" gate="C" pin="1"/>
 <wire x1="132.08" y1="88.9" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <junction x="132.08" y="93.98"/>
-<pinref part="R13" gate="R" pin="1"/>
+<pinref part="BRIDGE" gate="R" pin="1"/>
 <wire x1="132.08" y1="93.98" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <label x="116.84" y="93.98" size="1.778" layer="95"/>
@@ -938,7 +938,7 @@ Pad diameter: 30 mil</description>
 <label x="66.04" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C20" gate="C" pin="2"/>
+<pinref part="CAPCOM" gate="C" pin="2"/>
 <wire x1="132.08" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
 <label x="119.38" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -978,7 +978,7 @@ Pad diameter: 30 mil</description>
 <label x="66.04" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R13" gate="R" pin="2"/>
+<pinref part="BRIDGE" gate="R" pin="2"/>
 <wire x1="132.08" y1="111.76" x2="116.84" y2="111.76" width="0.1524" layer="91"/>
 <label x="119.38" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -987,7 +987,7 @@ Pad diameter: 30 mil</description>
 <segment>
 <wire x1="20.32" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 <label x="30.48" y="78.74" size="1.778" layer="95"/>
-<pinref part="I_COM" gate="P" pin="P"/>
+<pinref part="ICOM" gate="P" pin="P"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="T"/>
@@ -997,7 +997,7 @@ Pad diameter: 30 mil</description>
 </net>
 <net name="I_X" class="0">
 <segment>
-<pinref part="I_X" gate="P" pin="P"/>
+<pinref part="IX" gate="P" pin="P"/>
 <wire x1="20.32" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 <label x="33.02" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -1014,12 +1014,12 @@ Pad diameter: 30 mil</description>
 <label x="66.04" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="-IN"/>
+<pinref part="OPA129" gate="G$1" pin="-IN"/>
 <wire x1="142.24" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="88.9" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="78.74" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="OUT"/>
+<pinref part="OPA129" gate="G$1" pin="OUT"/>
 <wire x1="160.02" y1="91.44" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 <junction x="160.02" y="91.44"/>
