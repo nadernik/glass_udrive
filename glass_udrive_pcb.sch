@@ -829,6 +829,7 @@ Pad diameter: 30 mil</description>
 <sheets>
 <sheet>
 <plain>
+<text x="213.36" y="-2.54" size="1.778" layer="101">1.0</text>
 </plain>
 <instances>
 <instance part="OPA129" gate="G$1" x="149.86" y="91.44"/>
@@ -1024,11 +1025,17 @@ Pad diameter: 30 mil</description>
 <wire x1="160.02" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 <junction x="160.02" y="91.44"/>
 <label x="162.56" y="91.44" size="1.778" layer="95"/>
+<pinref part="OPA129" gate="G$1" pin="SUBS"/>
+<wire x1="157.48" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="93.98" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,87.5771,123.287,STIM2_N,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
