@@ -824,12 +824,8 @@ by exp-lbrs.ulp</description>
 <part name="AD8224" library="GyroDrive" deviceset="ANALOG-DEVICES-E14_AD8426ACPZ-R7" device=""/>
 <part name="REF" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="R5" library="GFL" deviceset="R" device="_0201" value="5.49KOhm"/>
-<part name="R4" library="GFL" deviceset="R" device="_0201" value="5.49KOhm"/>
-<part name="METAL" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="R3" library="GFL" deviceset="R" device="_0201" value="10Mohm"/>
-<part name="R2" library="GFL" deviceset="R" device="_0201" value="10MOhm"/>
 <part name="C5" library="GFL" deviceset="C" device="_0201" value="6800pF"/>
-<part name="C4" library="GFL" deviceset="C" device="_0201" value="6800pF"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="GFL" deviceset="R" device="_0201" value="10Mohm"/>
@@ -874,13 +870,9 @@ by exp-lbrs.ulp</description>
 <instance part="AD8224" gate="A" x="175.26" y="81.28"/>
 <instance part="REF" gate="P" x="-5.08" y="15.24"/>
 <instance part="R5" gate="R" x="149.86" y="63.5" rot="R90"/>
-<instance part="R4" gate="R" x="149.86" y="55.88" rot="R180"/>
-<instance part="METAL" gate="P" x="-5.08" y="40.64"/>
 <instance part="R3" gate="R" x="88.9" y="53.34" rot="R90"/>
-<instance part="R2" gate="R" x="114.3" y="30.48" rot="R90"/>
 <instance part="C5" gate="C" x="81.28" y="58.42" rot="R90"/>
-<instance part="C4" gate="C" x="104.14" y="35.56" rot="R90"/>
-<instance part="GND3" gate="1" x="114.3" y="22.86"/>
+<instance part="GND3" gate="1" x="137.16" y="81.28"/>
 <instance part="GND4" gate="1" x="88.9" y="45.72"/>
 <instance part="R1" gate="R" x="144.78" y="38.1" rot="R90"/>
 <instance part="C3" gate="C" x="139.7" y="45.72" rot="R90"/>
@@ -966,12 +958,13 @@ by exp-lbrs.ulp</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R2" gate="R" pin="1"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R1" gate="R" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="AD8224" gate="A" pin="+IN2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="157.48" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAP_COM" class="0">
@@ -1077,20 +1070,6 @@ by exp-lbrs.ulp</description>
 <wire x1="157.48" y1="63.5" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="AD8224" gate="A" pin="RG2_2"/>
-<pinref part="R4" gate="R" pin="2"/>
-<wire x1="157.48" y1="58.42" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="AD8224" gate="A" pin="RG2"/>
-<pinref part="R4" gate="R" pin="1"/>
-<wire x1="157.48" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GLASS" class="0">
 <segment>
 <pinref part="GLASS" gate="P" pin="P"/>
@@ -1101,18 +1080,6 @@ by exp-lbrs.ulp</description>
 <pinref part="C5" gate="C" pin="1"/>
 <wire x1="78.74" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <label x="71.12" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="METAL" class="0">
-<segment>
-<pinref part="METAL" gate="P" pin="P"/>
-<wire x1="-2.54" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
-<label x="5.08" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C4" gate="C" pin="1"/>
-<wire x1="101.6" y1="35.56" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
-<label x="91.44" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GLASS_OUT" class="0">
@@ -1128,11 +1095,6 @@ by exp-lbrs.ulp</description>
 </segment>
 </net>
 <net name="METAL_OUT" class="0">
-<segment>
-<pinref part="AD8224" gate="A" pin="OUT2"/>
-<wire x1="193.04" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
-<label x="195.58" y="78.74" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="OMNETICS" gate="G$1" pin="D"/>
 <wire x1="66.04" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
@@ -1158,29 +1120,11 @@ by exp-lbrs.ulp</description>
 <pinref part="C5" gate="C" pin="2"/>
 </segment>
 </net>
-<net name="METAL_FLT" class="0">
-<segment>
-<pinref part="AD8224" gate="A" pin="+IN2"/>
-<wire x1="157.48" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="83.82" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="35.56" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
-<label x="119.38" y="35.56" size="1.778" layer="95"/>
-<pinref part="R2" gate="R" pin="2"/>
-<pinref part="C4" gate="C" pin="2"/>
-<wire x1="114.3" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
-<junction x="114.3" y="35.56"/>
-</segment>
-</net>
 <net name="REF_FLT" class="0">
 <segment>
-<wire x1="142.24" y1="81.28" x2="154.94" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 <label x="144.78" y="81.28" size="1.778" layer="95"/>
 <pinref part="AD8224" gate="A" pin="-IN1"/>
-<pinref part="AD8224" gate="A" pin="-IN2"/>
-<wire x1="154.94" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="78.74" x2="154.94" y2="81.28" width="0.1524" layer="91"/>
-<junction x="154.94" y="81.28"/>
 <pinref part="C3" gate="C" pin="2"/>
 <wire x1="144.78" y1="45.72" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="50.8" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
@@ -1188,6 +1132,18 @@ by exp-lbrs.ulp</description>
 <pinref part="R1" gate="R" pin="2"/>
 <wire x1="144.78" y1="45.72" x2="144.78" y2="43.18" width="0.1524" layer="91"/>
 <junction x="144.78" y="45.72"/>
+</segment>
+</net>
+<net name="CHAN2_OUT" class="0">
+<segment>
+<pinref part="AD8224" gate="A" pin="OUT2"/>
+<wire x1="193.04" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="195.58" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AD8224" gate="A" pin="-IN2"/>
+<wire x1="147.32" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
+<label x="144.78" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
