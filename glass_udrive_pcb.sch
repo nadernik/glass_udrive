@@ -854,8 +854,8 @@ by exp-lbrs.ulp</description>
 <instance part="FRAME1" gate="G$1" x="-25.4" y="-10.16"/>
 <instance part="FRAME1" gate="G$2" x="121.92" y="-10.16"/>
 <instance part="OMNETICS" gate="G$1" x="58.42" y="116.84"/>
-<instance part="BRIDGE" gate="R" x="116.84" y="71.12" rot="R90"/>
-<instance part="CAPCOM" gate="C" x="116.84" y="50.8"/>
+<instance part="BRIDGE" gate="R" x="88.9" y="66.04" rot="R90"/>
+<instance part="CAPCOM" gate="C" x="88.9" y="50.8"/>
 <instance part="C1" gate="C" x="116.84" y="91.44" rot="R180"/>
 <instance part="C2" gate="C" x="127" y="86.36" rot="R180"/>
 <instance part="P-1" gate="1" x="124.46" y="93.98" rot="R270"/>
@@ -875,10 +875,10 @@ by exp-lbrs.ulp</description>
 <instance part="AD8224" gate="A" x="175.26" y="81.28"/>
 <instance part="REF" gate="P" x="-5.08" y="15.24"/>
 <instance part="R3" gate="R" x="149.86" y="63.5" rot="R90"/>
-<instance part="R2" gate="R" x="88.9" y="53.34" rot="R90"/>
-<instance part="C4" gate="C" x="81.28" y="58.42" rot="R90"/>
+<instance part="R2" gate="R" x="104.14" y="53.34" rot="R90"/>
+<instance part="C4" gate="C" x="96.52" y="58.42" rot="R90"/>
 <instance part="GND3" gate="1" x="137.16" y="81.28"/>
-<instance part="GND4" gate="1" x="88.9" y="45.72"/>
+<instance part="GND4" gate="1" x="104.14" y="45.72"/>
 <instance part="R1" gate="R" x="144.78" y="38.1" rot="R90"/>
 <instance part="C3" gate="C" x="139.7" y="45.72" rot="R90"/>
 <instance part="GND5" gate="1" x="144.78" y="30.48"/>
@@ -1003,8 +1003,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="CAPCOM" gate="C" pin="2"/>
-<wire x1="116.84" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
-<label x="104.14" y="45.72" size="1.778" layer="95"/>
+<wire x1="88.9" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<label x="76.2" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STIM1_P" class="0">
@@ -1043,8 +1043,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="BRIDGE" gate="R" pin="2"/>
-<wire x1="116.84" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<label x="104.14" y="76.2" size="1.778" layer="95"/>
+<wire x1="88.9" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
+<label x="76.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I_COM" class="0">
@@ -1106,8 +1106,14 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="C4" gate="C" pin="1"/>
-<wire x1="78.74" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<label x="71.12" y="58.42" size="1.778" layer="95"/>
+<wire x1="93.98" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<label x="78.74" y="58.42" size="1.778" layer="95"/>
+<pinref part="BRIDGE" gate="R" pin="1"/>
+<wire x1="88.9" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="60.96" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<junction x="88.9" y="58.42"/>
+<pinref part="CAPCOM" gate="C" pin="1"/>
+<wire x1="88.9" y1="53.34" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GLASS_OUT" class="0">
@@ -1131,20 +1137,14 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="GLASS_FLT" class="0">
 <segment>
-<pinref part="CAPCOM" gate="C" pin="1"/>
-<wire x1="116.84" y1="53.34" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
-<junction x="116.84" y="58.42"/>
-<pinref part="BRIDGE" gate="R" pin="1"/>
-<wire x1="116.84" y1="58.42" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
-<label x="101.6" y="58.42" size="1.778" layer="95"/>
-<wire x1="116.84" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<label x="114.3" y="58.42" size="1.778" layer="95"/>
 <wire x1="132.08" y1="58.42" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="AD8224" gate="A" pin="+IN1"/>
 <wire x1="132.08" y1="86.36" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R2" gate="R" pin="2"/>
-<wire x1="88.9" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
-<junction x="88.9" y="58.42"/>
+<wire x1="104.14" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<junction x="104.14" y="58.42"/>
 <pinref part="C4" gate="C" pin="2"/>
 </segment>
 </net>
