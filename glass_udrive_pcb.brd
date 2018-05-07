@@ -152,10 +152,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="-0.762" y1="0" x2="8.4328" y2="0" width="0.1" layer="20"/>
+<wire x1="-0.762" y1="-0.4064" x2="8.4328" y2="-0.4064" width="0.1" layer="20"/>
 <wire x1="8.5" y1="6.4636" x2="8.5" y2="19.508" width="0.1" layer="20"/>
 <wire x1="8.5" y1="19.508" x2="-0.762" y2="19.508" width="0.1" layer="20"/>
-<wire x1="-0.762" y1="19.508" x2="-0.762" y2="0" width="0.1" layer="20"/>
+<wire x1="-0.762" y1="19.508" x2="-0.762" y2="-0.4064" width="0.1" layer="20"/>
 <text x="7.2" y="8.1" size="0.5" layer="22" font="vector" rot="MR270">Nader Nikbakht
 FeeLab, MIT 2018</text>
 <text x="4.9016" y="6.9618" size="0.5" layer="22" font="vector" rot="MR270">Glass uDrive
@@ -201,19 +201,19 @@ Rev 1.0</text>
 <vertex x="2.9772" y="17.9106"/>
 </polygon>
 <wire x1="2.6816" y1="17.6058" x2="2.961" y2="17.3264" width="0.2032" layer="21"/>
-<wire x1="8.4328" y1="0" x2="8.4328" y2="3.2512" width="0.1016" layer="20"/>
+<wire x1="8.4328" y1="-0.4064" x2="8.4328" y2="3.2512" width="0.1016" layer="20"/>
 <wire x1="8.4328" y1="3.2512" x2="13.716" y2="3.2512" width="0.1016" layer="20"/>
 <wire x1="13.716" y1="3.2512" x2="13.706" y2="6.47" width="0.1016" layer="20"/>
 <wire x1="8.4944" y1="6.47" x2="13.706" y2="6.47" width="0.1016" layer="20"/>
-<dimension x1="8.4328" y1="0" x2="8.4328" y2="3.2512" x3="18.796" y3="1.6256" textsize="0.5" layer="20" width="0.01"/>
+<dimension x1="8.4328" y1="0" x2="8.4328" y2="3.2512" x3="18.796" y3="1.6256" textsize="0.5" layer="20" width="0.01" visible="yes"/>
 <hole x="9.76" y="4.898" drill="1.5"/>
 <hole x="12.3" y="4.908" drill="1.5"/>
-<dimension x1="9.76" y1="4.4" x2="12.3" y2="4.4" x3="11.03" y3="6.988" textsize="0.5" layer="20" dtype="diameter" width="0.01" extwidth="0.01"/>
-<dimension x1="13.716" y1="5.588" x2="8.5044" y2="5.588" x3="11.1102" y3="8.124" textsize="0.5" layer="20" width="0.01" extwidth="0.01"/>
-<dimension x1="-0.762" y1="0" x2="13.716" y2="0" x3="6.477" y3="-1.778" textsize="0.5" layer="20" width="0.01" extwidth="0.01"/>
-<dimension x1="13.716" y1="3.2512" x2="13.706" y2="6.47" x3="14.5544" y3="4.86321875" textsize="0.5" layer="20" width="0.01" extwidth="0.01"/>
-<dimension x1="-0.762" y1="0" x2="-0.762" y2="19.508" x3="-2.1844" y3="9.754" textsize="0.5" layer="20" width="0.01" extwidth="0.01"/>
-<dimension x1="8.5" y1="19.508" x2="-0.762" y2="19.508" x3="3.869" y3="21.463" textsize="0.5" layer="20" width="0.01" extwidth="0.01"/>
+<dimension x1="9.76" y1="4.4" x2="12.3" y2="4.4" x3="11.03" y3="6.988" textsize="0.5" layer="20" dtype="diameter" width="0.01" extwidth="0.01" visible="yes"/>
+<dimension x1="13.716" y1="5.588" x2="8.5044" y2="5.588" x3="11.1102" y3="8.124" textsize="0.5" layer="20" width="0.01" extwidth="0.01" visible="yes"/>
+<dimension x1="-0.762" y1="0" x2="13.716" y2="0" x3="6.477" y3="-1.778" textsize="0.5" layer="20" width="0.01" extwidth="0.01" visible="yes"/>
+<dimension x1="13.716" y1="3.2512" x2="13.706" y2="6.47" x3="14.5544" y3="4.86321875" textsize="0.5" layer="20" width="0.01" extwidth="0.01" visible="yes"/>
+<dimension x1="8.5" y1="19.508" x2="-0.762" y2="19.508" x3="3.869" y3="21.463" textsize="0.5" layer="20" width="0.01" extwidth="0.01" visible="yes"/>
+<dimension x1="-0.762" y1="-0.4064" x2="-0.762" y2="19.508" x3="-2.2352" y3="9.5508" textsize="0.508" layer="20" width="0.01" extwidth="0.01" visible="yes"/>
 </plain>
 <libraries>
 <library name="GFL">
@@ -583,11 +583,11 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="C1" library="GFL" package="0201" value="0.1uF" x="3.71" y="12.918" smashed="yes" rot="R180">
-<attribute name="NAME" x="4.5114" y="12.0496" size="0.5" layer="25" font="vector" rot="R135"/>
+<attribute name="NAME" x="2.8856" y="12.5378" size="0.508" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="4.98" y="14.696" size="0.762" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="C2" library="GFL" package="0201" value="0.1uF" x="5.22" y="12.908" smashed="yes">
-<attribute name="NAME" x="5.961" y="11.5902" size="0.5" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="6.5198" y="12.5046" size="0.5" layer="25" font="vector" ratio="12" rot="R90"/>
 <attribute name="VALUE" x="3.95" y="11.13" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="CAPCOM" library="GFL" package="0402" value="10pF" x="1.07050625" y="12.9356" smashed="yes">
@@ -599,11 +599,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="-0.897" y="17.0763" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="ICOM" library="GFL" package="30MIL/15MIL" value="" x="1.93" y="1.01" smashed="yes">
-<attribute name="NAME" x="1.498" y="0.1212" size="0.4" layer="25" font="vector" ratio="12"/>
+<attribute name="NAME" x="2.4124" y="0.2736" size="0.508" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="0.7108" y="-0.5521" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="IX" library="GFL" package="30MIL/15MIL" value="" x="0.89" y="1.01" smashed="yes">
-<attribute name="NAME" x="0.4214" y="0.8074" size="0.4" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="0.4214" y="0.8074" size="0.508" layer="25" font="vector" ratio="12" rot="R180"/>
 <attribute name="VALUE" x="-0.3292" y="-0.5521" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="OMNETICS" library="GFL" package="OMNETICS_A75243-001" value="OMNETICS_A75243-001" x="4.68" y="2.67" smashed="yes">
@@ -630,7 +630,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="6.3908" y="0.7179" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="GND" library="GFL" package="30MIL/15MIL" value="" x="0.89" y="2.07" smashed="yes">
-<attribute name="NAME" x="-0.0396" y="1.8582" size="0.4" layer="25" font="vector" ratio="12" rot="R45"/>
+<attribute name="NAME" x="-0.2428" y="1.7058" size="0.508" layer="25" font="vector" ratio="12" rot="R45"/>
 <attribute name="VALUE" x="-0.3292" y="0.5079" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="AD8224" library="GyroDrive" package="ANALOG-DEVICES-E14_QFN65P400X400X100-16N" value="ANALOG-DEVICES-E14_AD8426ACPZ-R7" x="4.4" y="15.908" smashed="yes">
@@ -639,7 +639,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SUPPLIER" value="Analog Devices" x="4.4" y="15.908" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="AD8426ACPZ-R7" x="4.4" y="15.908" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="58T4523" x="4.4" y="15.908" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.9708" y="14.9664" size="0.4" layer="25" ratio="10" rot="SR90"/>
+<attribute name="NAME" x="4.9708" y="14.9156" size="0.4" layer="25" font="vector" ratio="10" rot="SR90"/>
 <attribute name="VALUE" x="0.9456" y="9.431" size="2.0828" layer="27" ratio="10" rot="SR0"/>
 </element>
 <element name="REF" library="GFL" package="30MIL/15MIL" value="" x="7.61" y="3.4346" smashed="yes">
@@ -647,11 +647,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="6.3908" y="1.8725" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="R3" library="GFL" package="0201" value="5.49KOhm" x="0.8912" y="16.2772" smashed="yes" rot="R90">
-<attribute name="NAME" x="0.2098" y="16.0054" size="0.4" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="0.413" y="16.0054" size="0.508" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="2.7962" y="15.6422" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R2" library="GFL" package="0201" value="10Mohm" x="0.8766" y="14.6972" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.0046" y="14.1798" size="0.4" layer="25" rot="R135"/>
+<attribute name="NAME" x="0.3998" y="14.5014" size="0.508" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="2.7816" y="14.0622" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C4" library="GFL" package="0201" value="6800pF" x="1.23" y="17.588" smashed="yes" rot="R180">
@@ -659,19 +659,19 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="1.865" y="19.493" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R1" library="GFL" package="0201" value="10Mohm" x="7.62" y="6.858" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.001" y="7.3152" size="0.381" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="8.0518" y="7.3152" size="0.381" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.0452" y="8.0518" size="1.016" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C3" library="GFL" package="0201" value="6800pF" x="7.62" y="5.2578" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.3566" y="4.9784" size="0.381" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="8.4582" y="5.0292" size="0.381" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="9.1948" y="4.064" size="1.016" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C6" library="GFL" package="0603" value="10uF" x="4.6052" y="11.476" smashed="yes" rot="R180">
-<attribute name="NAME" x="4.4498" y="11.8442" size="0.381" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="4.2086" y="10.0886" size="0.508" layer="25" font="vector"/>
 <attribute name="VALUE" x="5.799" y="13.0508" size="1.016" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="C5" library="GFL" package="0603" value="10uF" x="7.38" y="12.215" smashed="yes" rot="R270">
-<attribute name="NAME" x="7.9108" y="11.915" size="0.381" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="7.8462" y="14.3624" size="0.508" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="5.8052" y="13.4088" size="1.016" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="GND_W" library="GFL" package="30MIL/15MIL" value="" x="0.889" y="3.4036" smashed="yes">
@@ -741,8 +741,8 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.127" layer="16">
 <vertex x="-0.762" y="19.508"/>
 <vertex x="8.49" y="19.498"/>
-<vertex x="8.43" y="0"/>
-<vertex x="-0.762" y="0"/>
+<vertex x="8.43" y="-0.4064"/>
+<vertex x="-0.762" y="-0.4064"/>
 </polygon>
 <contactref element="C2" pad="1"/>
 <contactref element="AD8224" pad="6"/>
