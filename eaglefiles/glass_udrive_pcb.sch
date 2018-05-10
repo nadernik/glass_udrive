@@ -803,7 +803,7 @@ by exp-lbrs.ulp</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="OMNETICS" library="GFL" deviceset="OMNETICS_A75243-001" device=""/>
-<part name="BRIDGE" library="GFL" deviceset="R" device="_1206" value="100MOhm"/>
+<part name="BRIDGE" library="GFL" deviceset="R" device="_0402" value="100MOhm"/>
 <part name="CAPCOM" library="GFL" deviceset="C" device="_0402" value="10pF"/>
 <part name="C1" library="GFL" deviceset="C" device="_0201" value="0.1uF"/>
 <part name="C2" library="GFL" deviceset="C" device="_0201" value="0.1uF"/>
