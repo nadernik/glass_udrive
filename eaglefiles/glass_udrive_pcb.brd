@@ -6,13 +6,13 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.96850394" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
+<grid distance="1.96850394" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="57" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="13" fill="4" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="11" fill="5" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -588,7 +588,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="3.95" y="11.13" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="CAPCOM" library="GFL" package="0402" value="10pF" x="1.07050625" y="12.9356" smashed="yes">
-<attribute name="NAME" x="2.07769375" y="12.1944" size="0.4" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="NAME" x="2.3556" y="13.62769375" size="0.4" layer="25" font="vector" ratio="12" rot="R270"/>
 <attribute name="VALUE" x="-0.19949375" y="11.1576" size="0.762" layer="27" font="vector" ratio="12"/>
 </element>
 <element name="GLASS" library="GFL" package="30MIL/15MIL" value="" x="0.5222" y="18.6384" smashed="yes">
@@ -606,9 +606,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="OMNETICS" library="GFL" package="OMNETICS_A75243-001" value="OMNETICS_A75243-001" x="4.4514" y="2.5938" smashed="yes">
 <attribute name="NAME" x="6.1092" y="7.5558" size="0.5" layer="25" font="vector" ratio="12" rot="R180"/>
 </element>
-<element name="BRIDGE" library="GFL" package="0402" value="100MOhm" x="0.729678125" y="9.57209375" smashed="yes" rot="R270">
-<attribute name="NAME" x="1.456478125" y="10.71569375" size="0.4" layer="25" font="vector" ratio="12" rot="R270"/>
-<attribute name="VALUE" x="-1.048321875" y="10.84209375" size="0.762" layer="27" font="vector" ratio="12" rot="R270"/>
+<element name="BRIDGE" library="GFL" package="0402" value="100MOhm" x="0.729678125" y="11.02209375" smashed="yes" rot="R270">
+<attribute name="NAME" x="0.08430625" y="9.406478125" size="0.4" layer="25" font="vector" ratio="12"/>
+<attribute name="VALUE" x="-1.048321875" y="12.29209375" size="0.762" layer="27" font="vector" ratio="12" rot="R270"/>
 </element>
 <element name="STIM1-" library="GFL" package="30MIL/15MIL" value="" x="0.69" y="4.884" smashed="yes">
 <attribute name="NAME" x="-0.6718" y="4.2132" size="0.4" layer="25" font="vector" ratio="12" rot="R45"/>
@@ -880,7 +880,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.1336" y1="6.604" x2="2.032" y2="6.7056" width="0.1016" layer="15"/>
 <via x="2.032" y="6.7056" extent="1-16" drill="0.254"/>
 <wire x1="2.032" y1="6.7056" x2="2.032" y2="7.0104" width="0.1016" layer="1"/>
-<wire x1="0.729678125" y1="9.03869375" x2="0.729678125" y2="8.007921875" width="0.1016" layer="1"/>
+<wire x1="0.729678125" y1="10.48869375" x2="0.729678125" y2="8.007921875" width="0.1016" layer="1"/>
 <wire x1="0.729678125" y1="8.007921875" x2="2.032" y2="6.7056" width="0.1016" layer="1"/>
 </signal>
 <signal name="I_COM">
@@ -935,13 +935,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.4713" y1="17.1816" x2="1.4713" y2="17.4893" width="0.1016" layer="1"/>
 <wire x1="1.4713" y1="17.4893" x2="0.5222" y2="18.6384" width="0.1016" layer="1"/>
 <wire x1="0.53710625" y1="12.9356" x2="0.53710625" y2="13.78849375" width="0.1524" layer="1"/>
-<wire x1="0.53710625" y1="13.78849375" x2="0.2" y2="14.3256" width="0.1524" layer="1"/>
-<wire x1="0.2" y1="14.3256" x2="0.2" y2="18.3162" width="0.1524" layer="1"/>
-<wire x1="0.2" y1="18.3162" x2="0.5222" y2="18.6384" width="0.1524" layer="1"/>
-<wire x1="0.729678125" y1="10.10549375" x2="0.729678125" y2="12.020321875" width="0.1016" layer="1"/>
+<wire x1="0.53710625" y1="13.78849375" x2="1.2" y2="14.3256" width="0.1524" layer="15"/>
+<wire x1="1.2" y1="14.3256" x2="1.15" y2="18.0162" width="0.1524" layer="15"/>
+<wire x1="1.15" y1="18.0162" x2="0.5222" y2="18.6384" width="0.1524" layer="15"/>
+<wire x1="0.729678125" y1="11.55549375" x2="0.729678125" y2="12.020321875" width="0.1016" layer="1"/>
 <wire x1="0.729678125" y1="12.020321875" x2="0.55" y2="12.2" width="0.1016" layer="1"/>
 <wire x1="0.55" y1="12.2" x2="0.55" y2="12.92270625" width="0.1016" layer="1"/>
 <wire x1="0.55" y1="12.92270625" x2="0.53710625" y2="12.9356" width="0.1016" layer="1"/>
+<via x="0.53710625" y="13.78849375" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="GLASS_OUT">
 <contactref element="OMNETICS" pad="J"/>
