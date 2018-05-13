@@ -655,7 +655,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="9.5888" y="15.7894" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C2" library="GFL" package="0201" value="6800pF" x="8.1388" y="17.6896" smashed="yes" rot="R180">
-<attribute name="NAME" x="7.7488" y="18.1088" size="0.4" layer="25"/>
+<attribute name="NAME" x="7.3424" y="18.1088" size="0.4" layer="25"/>
 <attribute name="VALUE" x="8.7738" y="19.5946" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R1" library="GFL" package="0201" value="10Mohm" x="14.732" y="7.366" smashed="yes" rot="R270">
@@ -667,11 +667,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="16.3068" y="4.572" size="1.016" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C7" library="GFL" package="0603" value="10uF" x="8.1232" y="13.2764" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.7358" y="13.165" size="0.508" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="8.971" y="13.3682" size="0.508" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.698" y="12.0826" size="1.016" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C8" library="GFL" package="0603" value="10uF" x="14.6164" y="10.3656" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.988" y="11.0514" size="0.508" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="13.7528" y="10.0354" size="0.508" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="16.1912" y="9.1718" size="1.016" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="GND_W" library="GFL" package="30MIL/15MIL" value="" x="7.5978" y="2.8678" smashed="yes">
@@ -699,7 +699,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="15.7226" y="16.9926" size="1.016" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="C3" library="GFL" package="0201" value="6800pF" x="14.5288" y="14.7828" smashed="yes" rot="R180">
-<attribute name="NAME" x="14.7828" y="15.4432" size="0.508" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="14.478" y="14.5288" size="0.508" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="15.7226" y="16.3576" size="1.016" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="R6" library="GFL" package="0201" value="5.49KOhm" x="14.1478" y="16.4084" smashed="yes" rot="R270">
@@ -862,7 +862,15 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="CAP_COM">
 <contactref element="OMNETICS" pad="V"/>
 <contactref element="CAPCOM" pad="2"/>
-<wire x1="8.262" y1="5.30489375" x2="10.2934" y2="2.6319" width="0" layer="19" extent="1-1"/>
+<wire x1="8.262" y1="5.30489375" x2="9.63030625" y2="5.30489375" width="0.1016" layer="1"/>
+<wire x1="9.63030625" y1="5.30489375" x2="9.652" y2="5.2832" width="0.1016" layer="1"/>
+<via x="9.652" y="5.2832" extent="1-16" drill="0.254"/>
+<wire x1="9.652" y1="5.2832" x2="9.8552" y2="5.2832" width="0.1016" layer="15"/>
+<wire x1="9.8552" y1="5.2832" x2="10.2616" y2="4.8768" width="0.1016" layer="15"/>
+<wire x1="10.2616" y1="4.8768" x2="10.2616" y2="1.8288" width="0.1016" layer="15"/>
+<via x="10.2616" y="1.8288" extent="1-16" drill="0.254"/>
+<wire x1="10.2616" y1="1.8288" x2="10.2616" y2="2.6001" width="0.1016" layer="1"/>
+<wire x1="10.2616" y1="2.6001" x2="10.2934" y2="2.6319" width="0.1016" layer="1"/>
 </signal>
 <signal name="STIM1_P">
 <contactref element="OMNETICS" pad="E"/>
@@ -895,7 +903,18 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="BRG_BAL">
 <contactref element="OMNETICS" pad="B"/>
 <contactref element="BRIDGE" pad="2"/>
-<wire x1="7.079678125" y1="5.30709375" x2="12.1984" y2="2.6319" width="0" layer="19" extent="1-1"/>
+<wire x1="7.079678125" y1="5.30709375" x2="7.079678125" y2="4.909121875" width="0.1016" layer="1"/>
+<wire x1="7.079678125" y1="4.909121875" x2="7.2136" y2="4.7752" width="0.1016" layer="1"/>
+<wire x1="7.2136" y1="4.7752" x2="9.5504" y2="4.7752" width="0.1016" layer="1"/>
+<wire x1="9.5504" y1="4.7752" x2="9.7536" y2="4.572" width="0.1016" layer="1"/>
+<via x="9.7536" y="4.572" extent="1-16" drill="0.254"/>
+<wire x1="9.7536" y1="4.572" x2="9.7536" y2="1.524" width="0.1016" layer="15"/>
+<wire x1="9.7536" y1="1.524" x2="10.16" y2="1.2192" width="0.1016" layer="15"/>
+<wire x1="10.16" y1="1.2192" x2="12.0904" y2="1.2192" width="0.1016" layer="15"/>
+<wire x1="12.0904" y1="1.2192" x2="12.192" y2="1.3208" width="0.1016" layer="15"/>
+<via x="12.192" y="1.3208" extent="1-16" drill="0.254"/>
+<wire x1="12.192" y1="1.3208" x2="12.192" y2="2.6255" width="0.1016" layer="1"/>
+<wire x1="12.192" y1="2.6255" x2="12.1984" y2="2.6319" width="0.1016" layer="1"/>
 </signal>
 <signal name="I_COM">
 <contactref element="OMNETICS" pad="T"/>
@@ -948,8 +967,15 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="CAPCOM" pad="1"/>
 <wire x1="8.5325" y1="17.6896" x2="8.5325" y2="17.9973" width="0.1016" layer="1"/>
 <wire x1="8.5325" y1="17.9973" x2="7.7866" y2="19.1464" width="0.1016" layer="1"/>
-<wire x1="8.262" y1="6.37169375" x2="8.5325" y2="17.6896" width="0" layer="19" extent="1-1"/>
-<wire x1="7.079678125" y1="6.37389375" x2="8.262" y2="6.37169375" width="0" layer="19" extent="1-1"/>
+<wire x1="7.079678125" y1="6.37389375" x2="7.081878125" y2="6.37169375" width="0.1016" layer="1"/>
+<wire x1="7.081878125" y1="6.37169375" x2="8.262" y2="6.37169375" width="0.1016" layer="1"/>
+<wire x1="8.262" y1="6.37169375" x2="8.262" y2="7.2828" width="0.1016" layer="1"/>
+<wire x1="8.262" y1="7.2828" x2="8.2296" y2="7.3152" width="0.1016" layer="1"/>
+<via x="8.2296" y="7.3152" extent="1-16" drill="0.254"/>
+<wire x1="8.2296" y1="7.3152" x2="8.2296" y2="10.4648" width="0.1016" layer="15"/>
+<wire x1="8.2296" y1="10.4648" x2="8.7376" y2="10.9728" width="0.1016" layer="15"/>
+<wire x1="8.7376" y1="10.9728" x2="8.7376" y2="18.1954" width="0.1016" layer="15"/>
+<wire x1="8.7376" y1="18.1954" x2="7.7866" y2="19.1464" width="0.1016" layer="15"/>
 </signal>
 <signal name="GLASS_OUT">
 <contactref element="OMNETICS" pad="J"/>
