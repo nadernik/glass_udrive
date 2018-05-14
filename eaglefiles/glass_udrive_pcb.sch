@@ -814,15 +814,15 @@ by exp-lbrs.ulp</description>
 <part name="P+2" library="supply1" deviceset="+15V" device=""/>
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
 <part name="GLASS" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
-<part name="STIM2_N" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="S2+" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="IX" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="STIM1-" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="STIM1+" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
-<part name="STIM2_P" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="S2-" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="ICOM" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
-<part name="GND" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="G" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="U1" library="GyroDrive" deviceset="ANALOG-DEVICES-E14_AD8426ACPZ-R7" device=""/>
-<part name="REF" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="R" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="R5" library="GFL" deviceset="R" device="_0201" value="5.49KOhm"/>
 <part name="R2" library="GFL" deviceset="R" device="_0201" value="10Mohm"/>
 <part name="C2" library="GFL" deviceset="C" device="_0201" value="6800pF"/>
@@ -913,18 +913,18 @@ SJ1 open</text>
 <instance part="P+2" gate="1" x="-17.78" y="165.1"/>
 <instance part="P-2" gate="1" x="0" y="147.32"/>
 <instance part="GLASS" gate="P" x="-17.78" y="109.22"/>
-<instance part="STIM2_N" gate="P" x="63.5" y="162.56" rot="R180"/>
+<instance part="S2+" gate="P" x="63.5" y="162.56" rot="R180"/>
 <instance part="IX" gate="P" x="-17.78" y="99.06"/>
 <instance part="STIM1-" gate="P" x="53.34" y="147.32" rot="R180"/>
 <instance part="STIM1+" gate="P" x="7.62" y="147.32"/>
-<instance part="STIM2_P" gate="P" x="-10.16" y="162.56"/>
+<instance part="S2-" gate="P" x="-10.16" y="162.56"/>
 <instance part="ICOM" gate="P" x="-17.78" y="104.14"/>
-<instance part="GND" gate="P" x="-17.78" y="93.98"/>
+<instance part="G" gate="P" x="-17.78" y="93.98"/>
 <instance part="U1" gate="A" x="185.42" y="139.7" smashed="yes">
 <attribute name="NAME" x="172.8724" y="164.2872" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="169.4942" y="106.1212" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="REF" gate="P" x="-17.78" y="88.9"/>
+<instance part="R" gate="P" x="-17.78" y="88.9"/>
 <instance part="R5" gate="R" x="149.86" y="127" rot="R90"/>
 <instance part="R2" gate="R" x="83.82" y="109.22" rot="R90"/>
 <instance part="C2" gate="C" x="76.2" y="116.84" smashed="yes" rot="R90">
@@ -1029,7 +1029,7 @@ SJ1 open</text>
 <segment>
 <wire x1="-15.24" y1="93.98" x2="2.54" y2="93.98" width="0.1524" layer="91"/>
 <label x="-7.62" y="93.98" size="1.778" layer="95"/>
-<pinref part="GND" gate="P" pin="P"/>
+<pinref part="G" gate="P" pin="P"/>
 </segment>
 <segment>
 <pinref part="C6" gate="C" pin="1"/>
@@ -1113,13 +1113,13 @@ SJ1 open</text>
 <segment>
 <pinref part="P1" gate="G$1" pin="P"/>
 <wire x1="60.96" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="STIM2_N" gate="P" pin="P"/>
+<pinref part="S2+" gate="P" pin="P"/>
 </segment>
 </net>
 <net name="STIM2_P" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="K"/>
-<pinref part="STIM2_P" gate="P" pin="P"/>
+<pinref part="S2-" gate="P" pin="P"/>
 <wire x1="22.86" y1="162.56" x2="-7.62" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1161,7 +1161,7 @@ SJ1 open</text>
 </net>
 <net name="REF" class="0">
 <segment>
-<pinref part="REF" gate="P" pin="P"/>
+<pinref part="R" gate="P" pin="P"/>
 <wire x1="-15.24" y1="88.9" x2="2.54" y2="88.9" width="0.1524" layer="91"/>
 <label x="-7.62" y="88.9" size="1.778" layer="95"/>
 </segment>
