@@ -834,7 +834,7 @@ by exp-lbrs.ulp</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="GFL" deviceset="C" device="_0603" value="10uF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="GND_W" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="G_W" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="AUX+" library="GFL" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="R4" library="GFL" deviceset="R" device="_0201" value="10Mohm"/>
 <part name="C4" library="GFL" deviceset="C" device="_0201" value="6800pF"/>
@@ -942,7 +942,7 @@ SJ1 open</text>
 <instance part="GND6" gate="1" x="-17.78" y="144.78"/>
 <instance part="C8" gate="C" x="-7.62" y="144.78" rot="R180"/>
 <instance part="GND7" gate="1" x="-7.62" y="137.16"/>
-<instance part="GND_W" gate="P" x="-17.78" y="119.38"/>
+<instance part="G_W" gate="P" x="-17.78" y="119.38"/>
 <instance part="AUX+" gate="P" x="-17.78" y="114.3"/>
 <instance part="R4" gate="R" x="78.74" y="10.16" rot="R90"/>
 <instance part="C4" gate="C" x="71.12" y="17.78" smashed="yes" rot="R90">
@@ -1067,7 +1067,7 @@ SJ1 open</text>
 <wire x1="-7.62" y1="139.7" x2="-7.62" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND_W" gate="P" pin="P"/>
+<pinref part="G_W" gate="P" pin="P"/>
 <wire x1="-15.24" y1="119.38" x2="2.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="-7.62" y="119.38" size="1.778" layer="95"/>
 </segment>
